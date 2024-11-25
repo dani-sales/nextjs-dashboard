@@ -3,7 +3,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbo",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
@@ -23,10 +25,13 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "20.14.8",
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "husky": "^9.1.7"
   },
   "pnpm": {
     "overrides": {
